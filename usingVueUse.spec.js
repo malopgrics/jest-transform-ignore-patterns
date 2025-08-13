@@ -1,4 +1,4 @@
-import { dummy } from './index.js';
+import { dummy } from './usingVueUse.js';
 
 describe('should transform @vueuse', () => {
    it('should works', () => {

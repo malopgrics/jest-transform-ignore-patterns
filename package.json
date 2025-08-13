@@ -16,6 +16,7 @@
     "@vueuse/core": "^13.6.0",
     "babel-jest": "^30.0.5",
     "jest": "^30.0.5",
-    "jest-environment-jsdom": "^30.0.5"
+    "jest-environment-jsdom": "^30.0.5",
+    "lodash": "^4.17.21"
   }
 }
