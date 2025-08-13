@@ -1,5 +1,7 @@
 # bug reproduction for jest 'transformIgnorePatterns'
 
+See [related issue](https://github.com/jestjs/jest/issues/15781).
+
 It seems that 'transformIgnorePatterns' is not taken into account.
 
 This repo uses @vueuse/core v13.6.0. Since [v13.0.0](https://github.com/vueuse/vueuse/releases/tag/v13.0.0) this packages produces esm only, so it needs transformation for jest to run it.
