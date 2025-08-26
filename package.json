@@ -18,5 +18,8 @@
     "jest": "^30.0.5",
     "jest-environment-jsdom": "^30.0.5",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3"
   }
 }
