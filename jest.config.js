@@ -16,7 +16,7 @@ export default {
       '^.+\\.js$': 'babel-jest',
       '^.+\\.mjs$': 'babel-jest'
    },
-   transformIgnorePatterns: ['/node_modules/(?!(\\@vueuse)/)'],
+   transformIgnorePatterns: ['/node_modules/(?!(@vueuse)/)'],
 
    setupFiles: [],
    setupFilesAfterEnv: []
