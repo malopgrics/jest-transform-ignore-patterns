@@ -16,3 +16,14 @@ Steps to reproduce :
 npm ci
 npm run test
 ```
+
+## Resolution
+
+Turns out the problem is the `\\` in the regexp.
+Also it does not work for `@vueuse/core`. It works only at top level, wich could _maybe_ be problematic, but not a big issue.
+
+| regexp | works in windows | works in WSL |
+|--------|:----------------:|:------------:|
+|`'/node_modules/(?!(\\@vueuse)/)'` | ❌ | ✅ |
+|`'/node_modules/(?!(@vueuse)/)'` | ✅ | ✅ |
+|`'/node_modules/(?!(@vueuse/core)/)'` | ❌ | ❌ |
